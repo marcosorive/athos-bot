@@ -110,8 +110,6 @@ async function getGamePrice(puppeteerBrowser, url, current_price){
         }
     }catch(error){
         console.error('Error: ' + error)
-    }finally{
-        page.close()
     }
     return price.replace('€','') || current_price;
 }
